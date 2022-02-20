@@ -26,12 +26,12 @@ Mostly 3D printed design for linear drive machine. 4" of travel, compact and eco
 - (4) 1/4-20 washers
 - (6) M4x25mm Cheese head
 - (4) M4 rubber Grommets or (8) M4 rubber washers
-- (4) M4 hext nuts
+- (4) M4 hex nuts
 - (4) M4 Spring washers
 - (16) M3x8mm flat-head?
 
 ## Other
-- Attachment of your choice! End effector files compatible with vacuum-lock attachements and fleshlight are provided.
+- Attachment of your choice! End effector files compatible with vacuum-lock attachments and fleshlight are provided.
 
 # Printing
 
@@ -46,18 +46,44 @@ Mostly 3D printed design for linear drive machine. 4" of travel, compact and eco
 # Mechanical Assembly
 
 ## Stepper Driver setup
-- Set current dip switch for 2.5A currnent limit
+- Set current dip switch for 2.5A current limit
 - Set dip switch for steps per pulse (micro-steps) to 32
 
 ## Preparation
-Tap all the M3 holes in base for cover. Tap the M4 holes for the handle.
+
+### Base
+
+Tap all the M3 holes in base for cover.
+Tap M3 holes for TB6600 mounting.
+Tap M3 hole for cable clamp
+Press fit 1/4-20 nut into pocket, use 1/4 bolt from below to help seat if needed. If not secure, melt plastic around edge.
+Tap the M4 holes for the handle.
+
+### Cover
+
+Attach plug to fan wires (if none), will need mate for attaching to proto board
+Mount fan on inside and grill on outside using 4x M3x12mm flathead screws, lockwashers and nuts. Make sure airflow direction is *into* case.
+
+### Slide
+
+Remove and blobs and bumps with sharp knife. Clean out any crud in tube with 1/4" drill.
+
+### Pinion
+
+Clean up gear teeth, shaft hole as needed.
+Insert M2 hex nut into pocket in shaft, thread M2x4mm grub screw in nut, leave flush.
+
+## Assembly
+
+## Post-Assembly
+
 Lubricate slide with silicone lubricant oil (not grease).
 Lubricate pinion gear with silicone grease.
 
 # Wiring
 
 # Arduino
-Code provided is written for the ESP32 which has dual 240Mhz cores, and can run the stepper at its highest rate easily. It also has Wifi functionality built in.
+Code provided is written for the ESP32 which has dual 240MHz cores, and can run the stepper at its highest rate easily. It also has Wifi functionality built in.
 
 Any Arduino or other controller could probably be used but will not work with the provided code.
 
@@ -69,7 +95,7 @@ Any Arduino or other controller could probably be used but will not work with th
 
 # Operation
 
-Attach rod segment witrh end effector to slide shaft rod using the hex coupler with a addiotnal nut on each side. Tight the nuts to lock in place. A 3D printable palm wrench is included.
+Attach rod segment with end effector to slide shaft rod using the hex coupler with a additional nut on each side. Tight the nuts to lock in place. A 3D printable palm wrench is included.
 
-Plug in power, wait for Wifi to iniitalize and/or connect, and the linear drive to auto-home. 
+Plug in power, wait for Wifi to initialize and/or connect, and the linear drive to auto-home. 
 ...
