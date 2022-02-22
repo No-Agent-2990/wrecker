@@ -1,11 +1,11 @@
 # Wrecker
-Mostly 3D printed design for linear drive machine. 4" of travel, compact and economical. 
+Mostly 3D printed design for linear drive machine. 3" of travel, compact and economical. 
 
 ![image](https://user-images.githubusercontent.com/100043573/154815129-e6593b4b-1dd3-4aac-a349-174e5cd0a6ff.png)
 
-Due to use of 1/4-20 rod though the load bearing assembly it is quite sturdy.
+Stainless Steel 1/4-20 rod is used though the load bearing assembly it is quite sturdy.
 
-I apologize to all our metric friends for using imperial hardware, but its cheap and easy to find here. I may do a version for M6 rod if there is some demand.
+I apologize to all our metric friends for using imperial hardware, but it's cheap and easy to find here. I may do a version for M6 rod if there is some demand.
 
 # Bill of Materials
 
