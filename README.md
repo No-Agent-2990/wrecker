@@ -124,17 +124,25 @@ Lubricate pinion gear with silicone grease.
 # Arduino
 Code provided is written for the ESP32 which has dual 240MHz cores, and can run the stepper at its highest rate easily. It also has Wifi functionality built in. Any Arduino or other controller could probably be used but will not work with the provided code.
 
+I used this stepper lib:
+
+https://github.com/gin66/FastAccelStepper
+
 I used these tutorials to develop the wifi and webserver:
 
 https://randomnerdtutorials.com/esp32-dual-core-arduino-ide/
+
 https://randomnerdtutorials.com/esp32-servo-motor-web-server-arduino-ide/
 
-And this stepper lib:
-https://github.com/gin66/FastAccelStepper
+The randomnerdtutorials.com site has good tuturial how to install the needed components in the IDE. It's a bit complicated.
 
 ## Build Setup
 
 ## Code
+
+All the sketch code is in the main ino file.
+
+The network.h file has wifi network setup.
 
 ## Configuration
 
