@@ -1,5 +1,5 @@
 # Wrecker
-Mostly 3D printed design for linear drive machine. 4" of travel, compact and economical. 
+Mostly 3D printed design for linear drive machine. 3" of travel, compact and economical. 
 
 ![image](https://user-images.githubusercontent.com/100043573/154815129-e6593b4b-1dd3-4aac-a349-174e5cd0a6ff.png)
 
