@@ -23,9 +23,10 @@ I apologize to all our metric friends for using imperial hardware, but it's chea
 - (2) Hall Effect sensors AH3574-P-A
 - 40mm Fan (24V or 5V) - 5V if powering from Arduino (recommended)
 - (2) 10K linear potentiometers
+- (2) 6" or longer servo extensions
 
 ## Hardware
-- (2) 1/4-20 all-threaded Stainless Steel rod, 24" (304 or 18/8)
+- (1 or 2) 1/4-20 all-threaded Stainless Steel rod, 24" (304 or 18/8)
 - 1/4-20 Hex coupler
 - (6) 1/4-20 hex nuts
 - (4) 1/4-20 washers
@@ -83,6 +84,7 @@ Insert M2 hex nut into pocket in shaft, thread M2x4mm grub screw in nut, leave f
 Coat with a couple coats of spray-on acrylic to seal.
 
 ## Hall sensors
+
 Cut servo extension leaving about 6 in" on the female end.
 Attach wires to the 3 leads of female end, heat shrink. 
 - Red: VDD pin
@@ -90,6 +92,14 @@ Attach wires to the 3 leads of female end, heat shrink.
 - White: OUT pin
 
 ## Assembly
+
+### Slide
+Cut 8" piece of 1/4-20 rod, de-burr and reform threads with nut.
+*(Note: If you don't care if the machine can be broken down for storage, you can just used a single 16~20" piece)*
+Place through tube in slide. 
+Add washer to end w/o the nut pocket.
+Add nuts to both ends of the rod. Set nut on end with pocket flush with rod.
+Tight nut on other end to draw nut into pocket. Torque firmly.
 
 ### Hall sensors
 Slide hall sensors fully into troughs, angled face up.
