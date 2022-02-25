@@ -95,6 +95,32 @@ Attach wires to the 3 leads of female end, heat shrink.
 
 ## Assembly
 
+### Servo motor
+*if using grommets*:
+Place M4 grommets into base holes, and push M4x25mm throuh grommets from slide side to motor side
+
+*if using rubber washers*:
+Place M4x25mm through rubber washer, then through base, then add 2nd rubber washer.
+
+Place motor over screw ends, with leads up. Add lock washer and nut to each screw, tighten.
+
+### PCB
+Mount 3x7 PCB with ESP32, wiring attached tp 4 mounting bosses with #2x1/4" self-tapping screws.
+
+### 24V to USB converter
+
+Mount to side of vertical fin with M3x8mm screws. Plug micro-usb end into ESP32.
+
+### TB6600
+Mount to base holes with M3x8mm cheese head screws.
+
+Cut barrel extension cable near male end and discard male end and strip wire ends.
+Twist + wire from barrel connector and + wire from 24V USB converter together and insert into (+) DC input
+Twist - wire from barrel connector and - wire from 24V USB converter together and insert into (-) DC input
+***OBSERVE POLARITY CAREFULLY***
+
+Configure TB6600 control wiring for common ground (tie - terminal of each input to arduino ground), and the GPIO's from the arduino to the (+) control inputs.
+
 ### Slide
 Cut 8" piece of 1/4-20 rod, de-burr and reform threads with nut.
 *(Note: If you don't care if the machine can be broken down for storage, you can just used a single 16~20" piece)*
@@ -106,15 +132,6 @@ Tight nut on other end to draw nut into pocket. Torque firmly.
 ### Hall sensors
 Slide hall sensors fully into troughs, angled face up.
 Secure with dab of hot glue.
-
-### Servo motor
-*if using grommets*:
-Place M4 grommets into base holes, and push M4x25mm throuh grommets from slide side to motor side
-
-*if using rubber washers*:
-Place M4x25mm through rubber washer, then through base, then add 2nd rubber washer.
-
-Place motor over screw ends, with leads up. Add lock washer and nut to each screw, tighten.
 
 ### Vacuum lock effector
 
