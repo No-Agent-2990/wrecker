@@ -17,7 +17,7 @@ I apologize to all our metric friends for using imperial hardware, but it's chea
 ## Electronics:
 - ESP32 Arduino - Hitlego PN ESP-WROOM-32 or eq
 - 7x3cm proto PCB perfboard - from Elegoo CA-EL-CP-021 kit or eq
-- 24VDC 4A power supply with barrel connector output - ALITOVE ALT-2404 or eq
+- 24VDC 4A power supply with barrel connector output - ALITOVE ALT-2404 or eq. An old 19.5V laptop supply should work too though a little slower.
 - Barrel connector extension cord - must match 24VDC supply
 - 24V to Micro USB 5V converter
 - NEMA23 56mm Stepper, Bipolar, 2.8A, 2.5mH, 1.8deg - Steppers Online PN 23HS22-2804S or similar
