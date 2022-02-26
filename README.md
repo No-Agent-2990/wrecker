@@ -37,6 +37,7 @@ I apologize to all our metric friends for using imperial hardware, but it's chea
 - (4) M4 hex nuts
 - (4) M4 lock washers
 - (16) M3x8mm flat-head?
+- (2) 1/4" dia,  1/16" thick disc magnets
 
 ## Other
 - Attachment of your choice! End effector files compatible with vacuum-lock attachments and fleshlight are provided.
@@ -75,6 +76,7 @@ Mount fan on inside and grill on outside using 4x M3x12mm flathead screws, lockw
 ### Slide
 
 Remove and blobs and bumps with sharp knife. Clean out any crud in tube with 1/4" drill.
+Put a drop of glue in the pockets, then push magnets into each pocket. Remove any excess glue.
 
 ### Pinion
 
