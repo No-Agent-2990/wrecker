@@ -183,4 +183,6 @@ Attach rod segment with end effector to slide shaft rod using the hex coupler wi
 
 Plug in power, wait for Wifi to initialize and/or connect, and the linear drive to auto-home. 
 Adjust speed/stroke with sliders as desired.
+
+If no device is connected to the web server, the on-board control knobs remain active. Once a web client connects, they knobs are inactive. If the web client disconnects, the knobs become active again.
 ...
