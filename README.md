@@ -71,7 +71,8 @@ Tap the M4 holes for the handle.
 ### Cover
 
 Attach plug to fan wires (if none), will need mate for attaching to proto board
-Mount fan on inside and grill on outside using 4x M3x12mm flathead screws, lockwashers and nuts. Make sure airflow direction is *into* case.
+Mount fan on inside and grill on outside using 4x M3x12mm flathead screws, lockwashers and nuts.
+*Make sure airflow direction is _into_ case.*
 
 ### Slide
 
@@ -118,10 +119,11 @@ Mount to base holes with M3x8mm cheese head screws.
 
 Cut barrel extension cable near male end and discard male end and strip wire ends.
 Twist + wire from barrel connector and + wire from 24V USB converter together and insert into (+) DC input
+
 Twist - wire from barrel connector and - wire from 24V USB converter together and insert into (-) DC input
 ***OBSERVE POLARITY CAREFULLY***
 
-Configure TB6600 control wiring for common ground (tie - terminal of each input to arduino ground), and the GPIO's from the arduino to the (+) control inputs.
+See wiring section for details on connecting control signals to TB6600.
 
 ### Slide
 Cut 8" piece of 1/4-20 rod, de-burr and reform threads with nut.
@@ -151,6 +153,28 @@ Lubricate pinion gear with silicone grease.
 # Wiring
 
 *add diagram here*
+
+I recommned installing 0.1" center headers on the protoboard and connecting the control signals via jumpers or servo plugs.
+
+The default ESP32 pins used are given in the arduino sketch ino file source code:
+```
+const int pulsePin = 23;          <- This is the stepper driver "step" pulse output pin
+const int dirPin  = 22;           <- This is the stepper driver "direction" control output pin
+const int enaPin = 21;            <- This is the stepper driver enable output pin
+const int limitBackPin = 36;      <- This is the front hall sensor input pin
+const int limitFwdPin = 39;       <- This is the rear hall sensor input pin
+const int speedAdcPin = 34;       <- Speed potentionmeter analog input pin
+const int strokeAdcPin = 35;      <- Length potentiometer analog input pin
+```
+Configure TB6600 control wiring for common ground by connection the "-" terminal of each input of the TB6600 to arduino ground. 
+*Note that the TB6600 control input grounds and TB6600 power ground are all isolated from eachother inside the TB6600!* 
+
+Connect the appropriate ("pulse", "dir", "ena") GPIO pin of the ESP32 to the appropriate (+) control inputs on the TB6600.
+
+Arduino sketch will drive the pin high (3.3V) to activate.
+
+Connect hall sensors to ESP32 3.3V power (red wire), gnd (black), and appropriate GPIO pins (white).
+*Note that the EPS32 signals are 3.3V IO, and do not support 5V levels!*
 
 # Arduino
 Code provided is written for the ESP32 which has dual 240MHz cores, and can run the stepper at its highest rate easily. It also has Wifi functionality built in. Any Arduino or other controller could probably be used but will not work with the provided code.
