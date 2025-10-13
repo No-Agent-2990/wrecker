@@ -421,6 +421,11 @@ long setSpeedAcc(long newStepSpeed) {
   // The value of "a" will reach full velocity at 1/3 of stroke is:
   //      a = v^2 /(2*d/3))
   // Scaled to avoid integer overflow in square => a = 128 * (v/16)^2 * (d/3)
+  if (distance < 3) { // avoid divide by zero
+    Serial.println("Distance too small to set acc");
+    stepAcc = 1;
+    return stepAcc;
+  }
   stepAcc = 128L * (((stepSpeed/16)*(stepSpeed/16)) / (distance/3));
   if (stepAcc > stepAccMax)
     stepAcc = stepAccMax;
@@ -576,3 +581,4 @@ int checkSerial() {
     return false;    
   }
 }
+
